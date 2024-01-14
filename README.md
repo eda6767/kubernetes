@@ -175,6 +175,10 @@ kubectl logs <pod-name>
 
 </sub>
 
+
+<br/>
+</br>
+
 <sub/>
 
 - [ ]  **Allow external traffic**
@@ -212,3 +216,17 @@ The Kubernetes master creates the load balancer and related Compute Engine forwa
 kubectl get services
 ```
 </sub>
+
+
+<br/>
+</br>
+
+<sub/>
+
+- [ ]  **Scale up your service**
+
+</sub>
+
+
+<sub/> With Kubernetes we can easily scale up applications. Suppose we need more capacity - with powerful features offered by Kubernetes we can by using the replication controller to manage a new number of replicas for our pod.  </sub>
+

@@ -299,3 +299,7 @@ kubectl edit deployment hello-node
 kubectl get deployments
 ```
 </sub>
+
+
+
+<sub/> New pods will be created with the new image and the old pods will be deleted. </sub>

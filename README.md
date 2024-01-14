@@ -22,6 +22,7 @@ Kubernetes Engine, often referred to as GKE (Google Kubernetes Engine), is a man
 vi server.js
 ```
 
+
 </sub>
 
 <br/>
@@ -178,4 +179,36 @@ kubectl logs <pod-name>
 
 - [ ]  **Allow external traffic**
 
+</sub>
+
+
+
+
+<sub/>
+By default, the pod is only accessible by its internal IP within the cluster. In order to make the container accessible from outside the Kubernetes virtual network, we have to expose the pod as a Kubernetes service. </sub>
+
+<br/>
+</br>
+
+<sub/>
+
+```
+kubectl expose deployment hello-node --type="LoadBalancer" --port=8080
+```
+
+</sub>
+
+<sub/>
+Remark that we expose the deployment, and not the pod, directly. This will cause the resulting service to load balance traffic across all pods managed by the deployment.
+The Kubernetes master creates the load balancer and related Compute Engine forwarding rules, target pools, and firewall rules to make the service fully accessible from outside of Google Cloud. We can verify the service with following command : 
+</sub>
+
+<br/>
+</br>
+
+<sub/>
+
+```
+kubectl get services
+```
 </sub>

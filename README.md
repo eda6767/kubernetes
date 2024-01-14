@@ -230,3 +230,17 @@ kubectl get services
 
 <sub/> With Kubernetes we can easily scale up applications. Suppose we need more capacity - with powerful features offered by Kubernetes we can by using the replication controller to manage a new number of replicas for our pod.  </sub>
 
+
+<sub/>
+
+```
+kubectl scale deployment hello-node --replicas=4
+kubectl get deployment
+kubectl get pods
+```
+
+</sub>
+
+
+<sub/> By using a declarative approach we don't have to start or stop new instances. We have to just declare how many instances should be running at all times. Kubernetes reconciliation loops make sure that reality matches what we requested and takes action if needed. </sub>
+

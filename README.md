@@ -270,3 +270,11 @@ response.end("Hello Kubernetes World!");
 </sub>
 
 <sub/> Since, we modify the file we can now build and publish a new container image to the registry with an incremented tag. </sub>
+
+<sub/>
+
+```
+docker build -t gcr.io/PROJECT_ID/hello-node:v2 .
+docker push gcr.io/PROJECT_ID/hello-node:v2
+```
+</sub>

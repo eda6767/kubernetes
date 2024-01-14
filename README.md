@@ -46,6 +46,7 @@ www.listen(8080);
 </br>
 
 
+ <sub/> Because Cloud Shell has the node executable installed, we can immediatelly start the node server </sub>
 
 <sub/>
 

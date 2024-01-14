@@ -303,3 +303,9 @@ kubectl get deployments
 
 
 <sub/> New pods will be created with the new image and the old pods will be deleted. </sub>
+
+
+<p align="center">
+<img width="813" alt="Zrzut ekranu 2024-01-14 o 18 30 12" src="https://github.com/eda6767/kubernetes/assets/102791467/893d5b4b-59ba-4bc4-b077-19d0dce4d366">
+</p>
+

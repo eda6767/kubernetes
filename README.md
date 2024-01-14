@@ -173,3 +173,9 @@ kubectl logs <pod-name>
 ```
 
 </sub>
+
+<sub/>
+
+- [ ]  **Allow external traffic**
+
+</sub>

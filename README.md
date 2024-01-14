@@ -278,3 +278,24 @@ docker build -t gcr.io/PROJECT_ID/hello-node:v2 .
 docker push gcr.io/PROJECT_ID/hello-node:v2
 ```
 </sub>
+
+
+
+<sub/> Kubernetes will update your replication controller to the new version of the application. In order to change the image label for the running container, we have to edit the existing deployment and change the image from gcr.io/PROJECT_ID/hello-node:v1 to gcr.io/PROJECT_ID/hello-node:v2. </sub>
+
+<sub/>
+
+```
+kubectl edit deployment hello-node
+```
+</sub>
+
+
+<sub/> Then we can check the deployments wich following command: </sub>
+ 
+<sub/>
+
+```
+kubectl get deployments
+```
+</sub>

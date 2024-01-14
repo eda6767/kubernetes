@@ -106,3 +106,13 @@ docker run -d -p 8080:8080 gcr.io/PROJECT_ID/hello-node:v1
 curl http://localhost:8080
 ```
 </sub>
+
+<sub/> Next step is to stop the running container. To to this, we need to find our Docker container ID, and then stop it by given containder id value. </sub>
+
+<sub/>
+
+```
+docker ps
+docker stop [CONTAINER ID]
+```
+</sub>

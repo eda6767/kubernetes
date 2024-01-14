@@ -148,3 +148,28 @@ gcloud container clusters create hello-world \
                 --zone "ZONE"
 ```
 </sub>
+
+
+
+<sub/> Since we created cluster it's time to deploy a containerized application to the Kubernetes cluster! From now on we are gonna use the kubectl command line. A Kubernetes pod is a group of containers tied together for administration and networking purposes. It can contain single or multiple containers. Here we will use one container built with the Node.js image stored in the private container registry. It will serve content on port 8080. </sub>
+
+<sub/>
+
+```
+kubectl create deployment hello-node \
+    --image=gcr.io/PROJECT_ID/hello-node:v1
+```
+
+</sub>
+
+<sub/>
+
+```
+kubectl get pods
+kubectl cluster-info
+kubectl config view
+kubectl get events
+kubectl logs <pod-name>
+```
+
+</sub>

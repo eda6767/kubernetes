@@ -58,3 +58,15 @@ node server.js
 
  <sub/> Next we can to open a new browser tab and proexy a request on port 8080 using the built-in Web Preview feature in Cloud Shell. After that a new browser tab will open to display your results. Before continuing we should stop stop the running node server by typing CTRL+C in Cloud Shell. </sub>
 
+
+
+ <sub/> Next step is to create a Dockerfile that describes the image you want to build. Docker container images can extend from other existing images, so for this image, we'll extend from an existing Node image: </sub>
+
+<sub/> 
+
+ ```
+vi Dockerfile
+```
+
+</sub>
+

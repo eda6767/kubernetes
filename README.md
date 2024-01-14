@@ -116,3 +116,13 @@ docker ps
 docker stop [CONTAINER ID]
 ```
 </sub>
+
+
+<br/>
+</br>
+
+
+<sub/>  Now when the image is working as intended, we can push it to the Google Container Registry, a private repository for your Docker images. </sub>
+
+
+

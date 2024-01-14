@@ -244,3 +244,6 @@ kubectl get pods
 
 <sub/> By using a declarative approach we don't have to start or stop new instances. We have to just declare how many instances should be running at all times. Kubernetes reconciliation loops make sure that reality matches what we requested and takes action if needed. </sub>
 
+<p align="center">
+<img width="900" alt="Zrzut ekranu 2024-01-14 o 17 25 45" src="https://github.com/eda6767/kubernetes/assets/102791467/980aa43a-6522-4850-a727-c9120b283c27">
+</p>

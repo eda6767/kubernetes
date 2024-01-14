@@ -135,4 +135,16 @@ docker push gcr.io/PROJECT_ID/hello-node:v1
 </sub>
 
 
-<sub/>  Since now the container image will be listed in Container Registry. Therefore we have a project-wide Docker image available which Kubernetes can access and orchestrate. </sub>
+<sub/>  Since now the container image will be listed in Container Registry. Therefore we have a project-wide Docker image available which Kubernetes can access and orchestrate. Next step is to create Kubernetes Engine cluster. A cluster consists of a Kubernetes master API server hosted by Google and a set of worker nodes. The worker nodes are Compute Engine virtual machines. </sub>
+
+<sub/> 
+
+```
+gcloud config set project PROJECT_ID
+
+gcloud container clusters create hello-world \
+                --num-nodes 2 \
+                --machine-type n1-standard-1 \
+                --zone "ZONE"
+```
+</sub>

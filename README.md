@@ -119,6 +119,13 @@ docker stop [CONTAINER ID]
 
 <sub/>  Now when the image is working as intended, we can push it to the Google Container Registry, a private repository for your Docker images. </sub>
 
+<p align="center">
+<img width="826" alt="Zrzut ekranu 2024-01-14 o 16 38 07" src="https://github.com/eda6767/kubernetes/assets/102791467/9943312d-5c50-410a-b965-f8c6a7068afc">
+
+
+</p>
+
+
 <sub/>  
 
 ```

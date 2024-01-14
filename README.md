@@ -247,3 +247,13 @@ kubectl get pods
 <p align="center">
 <img width="900" alt="Zrzut ekranu 2024-01-14 o 17 25 45" src="https://github.com/eda6767/kubernetes/assets/102791467/980aa43a-6522-4850-a727-c9120b283c27">
 </p>
+
+
+<sub/>
+
+- [ ]  **Roll out an upgrade to your service**
+</sub>
+
+
+<sub/> Sometimes the application that we have deployed to production will require implementing additional features or bug fixes. Kubernetes helps deploy a new version to production without impacting application's users. </sub>
+

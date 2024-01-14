@@ -255,5 +255,18 @@ kubectl get pods
 </sub>
 
 
-<sub/> Sometimes the application that we have deployed to production will require implementing additional features or bug fixes. Kubernetes helps deploy a new version to production without impacting application's users. </sub>
+<sub/> Sometimes the application that we have deployed to production will require implementing additional features or bug fixes. Kubernetes helps deploy a new version to production without impacting application's users. Let's modify our service: </sub>
 
+
+<sub/>
+
+```
+vi server.js
+i
+response.end("Hello Kubernetes World!");
+:wq
+```
+
+</sub>
+
+<sub/> Since, we modify the file we can now build and publish a new container image to the registry with an incremented tag. </sub>

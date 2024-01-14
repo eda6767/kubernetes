@@ -53,5 +53,10 @@ www.listen(8080);
 ```
 node server.js
 ```
-
 </sub>
+
+<br/>
+</br>
+
+ <sub/> Next we can to open a new browser tab and proexy a request on port 8080 using the built-in Web Preview feature in Cloud Shell. After that a new browser tab will open to display your results. Before continuing we should stop stop the running node server by typing CTRL+C in Cloud Shell. </sub>
+

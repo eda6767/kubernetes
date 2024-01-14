@@ -70,3 +70,39 @@ vi Dockerfile
 
 </sub>
 
+<sub/> 
+After created file, we can add content - start from the node image found on the Docker, expose port 8080, copy file server.js to the image, and last command : start the node server. 
+
+
+```
+FROM node:6.9.2
+EXPOSE 8080
+COPY server.js .
+CMD node server.js
+```
+
+
+</sub>
+
+<sub/> 
+Next step is to build the image using following command - replacing PROJECT_ID with you project id. And then run a Docker container as a daemon on port 8080 from your newly-created container image. </sub>
+
+
+
+<sub/> 
+
+```
+docker build -t gcr.io/PROJECT_ID/hello-node:v1 .
+docker run -d -p 8080:8080 gcr.io/PROJECT_ID/hello-node:v1
+```
+ </sub>
+
+
+<sub/> To check the result - use web preview feature or run the following command: </sub>
+ 
+<sub/>
+
+```
+curl http://localhost:8080
+```
+</sub>

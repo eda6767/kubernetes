@@ -117,12 +117,15 @@ docker stop [CONTAINER ID]
 ```
 </sub>
 
-
-<br/>
-</br>
-
-
 <sub/>  Now when the image is working as intended, we can push it to the Google Container Registry, a private repository for your Docker images. </sub>
 
+<sub/>  
+
+```
+gcloud auth configure-docker
+docker push gcr.io/PROJECT_ID/hello-node:v1
+```
+</sub>
 
 
+<sub/>  Since now the container image will be listed in Container Registry. Therefore we have a project-wide Docker image available which Kubernetes can access and orchestrate. </sub>
